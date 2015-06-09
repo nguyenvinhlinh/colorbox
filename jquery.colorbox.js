@@ -543,7 +543,7 @@
 					publicMethod.prev();
 				});
         $info.click(function (){
-          alert("hello, clicked");
+          publicMethod.info();
         });
 				$close.click(function () {
 					publicMethod.close();
@@ -1056,6 +1056,9 @@
 			launch($related[index]);
 		}
 	};
+  publicMethod.info = function(){
+    alert ("Line: 1060: .info functionality here. "+ $related[index].getAttribute("hrefTo"));
+  };
 
 	// Note: to use this within an iframe use the following format: parent.jQuery.colorbox.close();
 	publicMethod.close = function () {
