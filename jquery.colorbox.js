@@ -542,6 +542,9 @@
 				$prev.click(function () {
 					publicMethod.prev();
 				});
+        $info.click(function (){
+          alert("hello, clicked");
+        });
 				$close.click(function () {
 					publicMethod.close();
 				});
